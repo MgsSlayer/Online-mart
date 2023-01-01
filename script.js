@@ -12,7 +12,7 @@ fetch("https://magbeads-backend.onrender.com/products")
       section.className = "item";
       section.onclick = () => {
         if (item._id) {
-          window.location.href = `product_detail?id=${item._id}`;
+          window.location.href = `product_detail.html?id=${item._id}`;
         } else {
           alert("Product ID not found!");
         }
@@ -66,32 +66,32 @@ var z = document.getElementById("btn");
 
 function register() {
   x.style.left = "-400px";
-  y.style.left = "15px";
+  y.style.left = "-15px";
   z.style.left = "120px";
 }
 
 function login() {
-  x.style.left = "15px";
+  x.style.left = "-15px";
   y.style.left = "450px";
   z.style.left = "0px";
 }
 
 // HAMBURGER MENU FOR MOBILE
 function toggleMenu() {
-  const menu = document.querySelectorAll(".menu-links, .harmburger-icon");
-
-  menu.forEach((element) => {
-    element.classList.toggle("open");
-  });
-}
-
-document.addEventListener("click", function (event) {
-  const menu = document.querySelector(".menu-links");
-
-  if (!menu.contains(event.target)) {
-    menu.classList.remove("open");
+	const menu = document.querySelectorAll('.menu-links');
+	
+	menu.forEach(element =>{
+	  element.classList.toggle("open");
+	})
   }
-});
+
+ // document.addEventListener("click", function (event) {
+  //  const menu = document.querySelector(".menu-links");
+
+   // if (!menu.contains(event.target)) {
+    //    menu.classList.remove("open");
+  //  }
+//});
 
 function toggle_Sub_menu() {
   const sub = document.getElementById("sub");
