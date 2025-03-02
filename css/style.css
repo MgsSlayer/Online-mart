@@ -203,7 +203,7 @@ img{
     /* top: ; */
     left: -0.5rem;
     background-color: white;
-    /* min-width: 17rem; */
+    min-width: 16rem;
     height: 100vh;
     transform: translateX(-17rem);
     overflow: hidden;
