@@ -253,10 +253,10 @@ img{
   }
 
   .menu_links_content{
-    max-height: 100vh;
+    max-height: calc(100% - 7rem);
     overflow-y: auto;
+    overflow-x: hidden;
     flex-grow: 1;
-    
   }
   
   /* .menu-links.open {
