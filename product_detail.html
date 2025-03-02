@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MagBeads - Product Page</title>
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -13,73 +13,77 @@
 <body>
     <div class="container_productPage">
         <div class="header">
-
-        <div class="top_banner">
-            <h1 id="banner"><a href="index.html">Mag Beads</a></h1>
-            <div id="search">
-                <input type="text" placeholder="Search...">
-                <i class= "fa fa-search norm_size srch"></i>
+            <div class="top_banner">
+                <h1 id="banner"><a href="index.html">Mag Beads</a></h1>
+                <div id="search">
+                    <input type="text" placeholder="Search...">
+                    <i class= "fa fa-search norm_size srch"></i>
+                </div>
+                <div id="icons">
+                    <div id="cart">
+                        <a href="#"><i class="fa fa-heart norm_size" style="color: red;" ></i></a>
+                    </div>
+                    <div id="cart">
+                        <a href="#"><i class="fa fa-shopping-bag norm_size" ></i></a>
+                    </div>
+                    <div>
+                        <a href="regpage.html"><i class="fa fa-user norm_size"></i></a>
+                    </div>
+                </div>
             </div>
-            <div id="icons">
-                <div id="cart">
-                    <a href="#"><i class="fa fa-heart norm_size" style="color: red;" ></i></a>
-                </div>
-                <div id="cart">
-                    <a href="#"><i class="fa fa-shopping-bag norm_size" ></i></a>
-                </div>
-                <div>
-                    <a href="regpage.html"><i class="fa fa-user norm_size"></i></a>
-                </div>
-            </div>
-        </div>
 
-        <div class="menu">
-            <nav id="desktop-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="test2.html">Categories</a>
-                        <div class="sub-list">
-                            <ul>
-                                <li><a href="shop.html">Waist Beads</a></li>
-                                <li><a href="shop.html">Bracelets</a></li>
-                                <li><a href="shop.html">Necklaces</a></li>
-                                <li><a href="shop.html">Beaded Bags</a></li>
-                                <li><a href="shop.html">Anklets</a></li>
-                                <li><a href="shop.html">Phone Straps</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Promo's</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <nav id="hamburger-nav">
-                <div class="hamburger-menu">
-                  <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="menu-links">
-                    <li><i class="fa fa-home norm_size"></i><a href="#" onclick="toggleMenu()">Home</a></li>
-                    <li><i class="fa fa-tags norm_size" ></i><a href="test2.html">Categories</a>
-                        <div class="sub-list">
-                            <ul>
-                                <li><a href="shop.html" onclick="toggleMenu()">Waist Beads</a></li>
-                                <li><a href="shop.html" onclick="toggleMenu()">Bracelets</a></li>
-                                <li><a href="shop.html" onclick="toggleMenu()">Necklaces</a></li>
-                                <li><a href="shop.html" onclick="toggleMenu()">Beaded Bags</a></li>
-                                <li><a href="shop.html" onclick="toggleMenu()">Anklets</a></li>
-                                <li><a href="shop.html" onclick="toggleMenu()">Phone Straps</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><i class="fa fa-list norm_size"></i><a href="#" onclick="toggleMenu()">Promo's</a></li>
-                    <li><i class="fa fa-envelope norm_size"></i><a href="#" onclick="toggleMenu()">Contact Us</a></li>
-                  </div>
-                </div>
-              </nav>
-        </div>
+            <div class="menu">
+                <nav id="desktop-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a>
+                            <div class="sub-list">
+                                <ol>
+                                    <li><a href="shop.html">Waist Beads</a></li>
+                                    <li><a href="shop.html">Bracelets</a></li>
+                                    <li><a href="shop.html">Necklaces</a></li>
+                                    <li><a href="shop.html">Beaded Bags</a></li>
+                                    <li><a href="shop.html">Anklets</a></li>
+                                    <li><a href="shop.html">Phone Straps</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li><a href="#">Promo's</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav id="hamburger-nav">
+                    <div class="hamburger-menu">
+                      <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="menu-links">
+                        <div class="content">
+                        <ul>
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-home norm_size"></i>Home</a></li>
+                        <li id="sub_menu" onclick="toggle_Sub_menu()"><a href="#"><i class="fa fa-tags norm_size" ></i>Categories</a>
+                            <div id="sub">
+                               <ul>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Waist Beads</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Bracelets</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Necklaces</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Beaded Bags</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Anklets</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Phone Straps</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-list norm_size"></i>Promo's</a></li>
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-envelope norm_size"></i>Contact Us</a></li>
+                    </ul>
+                      </div>
+                    </div>
+                    </div>
+                  </nav>
+            </div>
         </div>
 
         <div id="body_background">

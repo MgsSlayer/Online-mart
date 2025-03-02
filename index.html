@@ -16,9 +16,8 @@
 
         <!----- HEADER SECTION ----->
         <div class="header">
-
             <div class="top_banner">
-                <h1 id="banner"><a href="#">Mag Beads</a></h1>
+                <h1 id="banner"><a href="index.html">Mag Beads</a></h1>
                 <div id="search">
                     <input type="text" placeholder="Search...">
                     <i class= "fa fa-search norm_size srch"></i>
@@ -37,27 +36,60 @@
             </div>
 
             <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Categories</a>
-                        <div class="sub-list">
-                            <ul>
-                                <li><a href="shop.html">Waist Beads</a></li>
-                                <li><a href="shop.html">Bracelets</a></li>
-                                <li><a href="shop.html">Necklaces</a></li>
-                                <li><a href="shop.html">Beaded Bags</a></li>
-                                <li><a href="shop.html">Anklets</a></li>
-                                <li><a href="shop.html">Phone Straps</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Promo's</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+                <nav id="desktop-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a>
+                            <div class="sub-list">
+                                <ol>
+                                    <li><a href="shop.html">Waist Beads</a></li>
+                                    <li><a href="shop.html">Bracelets</a></li>
+                                    <li><a href="shop.html">Necklaces</a></li>
+                                    <li><a href="shop.html">Beaded Bags</a></li>
+                                    <li><a href="shop.html">Anklets</a></li>
+                                    <li><a href="shop.html">Phone Straps</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li><a href="#">Promo's</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav id="hamburger-nav">
+                    <div class="hamburger-menu">
+                      <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="menu-links">
+                        <div class="content">
+                        <ul>
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-home norm_size"></i>Home</a></li>
+                        <li id="sub_menu" onclick="toggle_Sub_menu()"><a href="#"><i class="fa fa-tags norm_size" ></i>Categories</a>
+                            <div id="sub">
+                               <ul>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Waist Beads</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Bracelets</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Necklaces</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Beaded Bags</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Anklets</a></li>
+                                    <li><img src="assets/metallic_black_bead.svg"><a href="shop.html" onclick="toggleMenu()">Phone Straps</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-list norm_size"></i>Promo's</a></li>
+                        <li><a href="#" onclick="toggleMenu()"><i class="fa fa-envelope norm_size"></i>Contact Us</a></li>
+                    </ul>
+                      </div>
+                    </div>
+                    </div>
+                  </nav>
             </div>
         </div>
 
-        
+        <div class="all">
         <div class="banner" style="background: url('assets/banner1.jpeg');"><p>LET'S STYLE YOU</p></div>
 
             <!----- CONTENT SECTION ----->
@@ -104,8 +136,15 @@
                             </div>
                     </section>
 
+                </div>
+            </div>
+        </div>
+
                     <div class="itm_head_desc"><h1 style="font-weight: 800; color: rgb(61, 70, 77);">New Arrivals</h1></div>
 
+ <div class="item_div">
+            <div class="item-section">
+                <div class="items">
                     <section class="item">
                         <div class="itm_img" style="background: url('assets/item6.jpg');background-size: cover;background-position: center;"><i class="fa fa-heart"></i></div>
                             <div class="desc">
@@ -154,19 +193,11 @@
         
 <footer>
         <div id="footer_icons">
-            <div id="socials">
                 <ul>
-                    <li><a href="#"><i class="fa fa-facebook" style="color: #3b5998;"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" style="color: #1da1f2;"></i></a></li>
-                    <li><a href="#"><i class="fa fa-whatsapp" style="color: #25d366"></i></a></li>
+                    <li><img src="assets/ma_symbol.svg" alt="MasterCard" style="width: 40px;"></li>
+                    <li><img src="assets/visa-icon.svg" alt="Visa" style="width: 40px;"></li>
+                    <li><img src="assets/verve-svgrepo-com.svg" alt="Verve" style="width: 40px;"></li>
                 </ul>
-            </div>
-            <div id="payment_cards">
-                <ul>
-                    <li style="display: flex; justify-content: center; align-items: center;"><img src="assets/ma_symbol.svg" alt="MasterCard" style="width: 40px;"></li>
-                    <li><i class="fa fa-cc-visa"></i></li>
-                </ul>
-            </div>
         </div>
 
         <div id="footer">
@@ -197,7 +228,12 @@
                     <ul>
                         <li>Contact us or order by phone at +234 8012345678</li>
                         <li>Email: <a href="#">magbeads@gmail.com</a></li>
-                        <li>Socials:</li>
+                        <li style="display: flex; gap: 1rem; font-size: 1rem;">Socials: 
+                            <a href="#"><i class="fa fa-facebook" style="color: #3b5998;"></i></a>
+                            <a href="#"><i class="fa fa-twitter" style="color: #1da1f2;"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp" style="color: #25d366"></i></a>
+                        
+                        </li>
                     </ul>
                 </div>
                 
@@ -208,5 +244,8 @@
 
         <!----- FOOTER SECTION END----->
     </div>
+</div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -124,9 +124,20 @@ img{
 }
 
 #desktop-nav li{
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     font-weight: 200;
+   
 }
+
+#desktop-nav{
+    width: 100%;
+}
+
+#desktop-nav ul{
+    display: flex;
+    gap: 3rem;
+}
+
 
 .menu li a:hover{
     color: grey;
@@ -134,26 +145,29 @@ img{
 }
 
 .sub-list{
-    display: none;
-}
-
-.sub-list ul li a{
-    color: black;
-}
-
-.sub-list ul li{
-    margin: 1rem 1rem 2rem 1rem;
-}
-
-.menu ul li:hover .sub-list{
+    /* display: none; */
     display: block;
     position: absolute;
-    padding-top: 5px;
     background-color: rgb(248, 248, 248);
     border-radius: 5px;
 }
 
-.menu ul li:hover .sub-list ul{
+.sub-list ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sub-list ol li{
+    padding: 0.7rem;
+}
+
+.sub-list ol li a{
+    color: black;
+}
+
+.menu ul li:hover .sub-list{
     display: block;
 }
 
@@ -189,32 +203,60 @@ img{
     /* top: ; */
     left: -0.5rem;
     background-color: white;
-    width: fit-content;
+    min-width: 17rem;
     height: 100vh;
-    transform: translateX(-15rem);
+    transform: translateX(-17rem);
     overflow: hidden;
     /* transition: all 0.5 ease-in-out; */
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
   }
   
-  .menu-links a {
-    display: block;
-    padding: 10px;
-    /* text-align: center; */
+  .menu-links ul li a {
     font-size: 1.5rem;
     color: black;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
-    width: 70%;
-    margin: 0 auto;
-    
+  }
+
+  .menu-links ul{
+    display: flex;
+    flex-direction: column;
   }
   
   .menu-links li {
-    list-style: none;
-    display: flex; 
-    align-items: center;
     margin: 0.5rem 1rem;
+    padding: 10px;
+  }
+
+  #sub{
+    display: none;
+    margin-top: 0.5rem;
+  }
+
+  #sub.open{
+    display: block;
+    /* transform: translateX(-1rem); */
+  }
+
+  #sub ul li{
+    display: flex;
+    align-items: center;
+  }
+
+  #sub ul li img{
+    width: 1.8rem;
+  }
+
+  #sub ul li a{
+    font-size: 1.1rem;
+  }
+
+  .content{
+    max-height: 100vh;
+    overflow-y: auto;
+    flex-grow: 1;
+    
   }
   
   /* .menu-links.open {
@@ -503,6 +545,12 @@ img{
     display: flex;
     gap: 2rem;
     justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox_opt{
+    display: flex;
+    gap: 0.4rem;
     align-items: center;
 }
 

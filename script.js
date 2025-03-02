@@ -27,3 +27,14 @@ function toggleMenu() {
         menu.classList.toggle("open");
     }
 });
+
+function toggle_Sub_menu(){
+const sub_menu = document.getElementById('sub_menu');
+const sub = document.getElementById('sub');
+
+sub.classList.toggle("open")
+}
+
+
+
+
