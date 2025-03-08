@@ -24,7 +24,7 @@ function toggleMenu() {
     const menu = document.querySelector(".menu-links");
 
     if (!menu.contains(event.target)) {
-        menu.classList.toggle("open");
+        menu.classList.remove("open");
     }
 });
 

@@ -10,6 +10,8 @@
 
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
@@ -20,7 +22,7 @@
             flex-direction: column;
             font-family: 'Montserrat', sans-serif;
             height: 100vh;
-            margin: -20px 0 50px;
+            /* margin: -20px 0 50px; */
         }
 
         h1 {
@@ -256,6 +258,104 @@
         .fa-linkedin{
             color: #0077b5;
         }
+
+        #mobile_view{
+            display: none;
+        }
+
+        /* -----MEDIA QUERY START----- */
+@media screen and (max-width: 600px) {
+    .container{
+        display: none;
+    }
+
+    #mobile_view{
+            background: url('assets/black-sesame.jpg');
+            display: flex;
+            /* height: 100%;
+            width: 100%; */
+            /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/lightgrey.jpg); */
+            /* background-position: center;
+            background-size: repeat;  */
+            position: absolute;
+            width: 100vw; 
+            height: 100vh; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .form-box{
+            /* background: url('assets/black-sesame.jpg'); */
+            width: 380px;
+            min-height: 500px;
+            position: relative;
+            margin: 6% auto;
+            padding: 5px;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-box{
+            width: 235px;
+            margin: 35px 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            /* box-shadow: 0 0 20px 9px pink; */
+            /* border-radius: 30px; */
+            /* border-bottom: 1px solid grey; */
+
+        }
+        .toggle-btn{
+            padding: 10px 30px;  
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+            color: #333;
+            font-size: 0.8rem;
+        }
+
+        #btn{
+            top: 0;
+            left:0;
+            position: absolute;
+            /* width: 110px; */
+            width: 50%;
+            height: 100%;
+            /* background: linear-gradient(to right, #ff105f, #ffad06); */
+            /* border-radius: 30px; */
+            transition: .5s;
+            border-bottom: 1px solid rgb(59, 75, 94);
+        }
+
+        .input-form{
+            top: 150px;
+            position: absolute;
+            width: 350px;
+            transition: .5s;
+        }
+     
+        #login{
+            /* left: 50px; */
+            left: 15px;
+        }
+
+        #register{
+            left: 450px; 
+            /* left: 520px; */
+        }
+
+        form{
+            justify-content: start;
+        }
+  
+}
     </style>
 </head>
 
@@ -308,7 +408,67 @@
 	</div>
 </div>
 
+<div id="mobile_view">
+
+    <div class="wrapper">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">SIGN IN</button>
+                <button type="button" class="toggle-btn" onclick="register()">SIGN UP</button>
+            </div>
+            <form class="input-form" id="login">
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+                <span>or use your account</span>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </form>
+
+            <form class="input-form" id="register">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button class="sign-up-btn">Sign Up</button>
+                <span>or use your socials for registration</span>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
 <script src="script.js"></script>
+
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "15px";
+        z.style.left = "120px";
+    }
+
+    function login(){
+        x.style.left = "15px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+
+</script>
 
 </body>
 </html>
+
+280px
