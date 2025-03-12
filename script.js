@@ -11,6 +11,22 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
+var x = document.getElementById("login");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
+
+function register(){
+    x.style.left = "-400px";
+    y.style.left = "15px";
+    z.style.left = "120px";
+}
+
+function login(){
+    x.style.left = "15px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+}
+
 // HAMBURGER MENU FOR MOBILE
 function toggleMenu() {
 	const menu = document.querySelectorAll('.menu-links, .harmburger-icon');

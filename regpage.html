@@ -108,7 +108,7 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-                    0 10px 10px rgba(0,0,0,0.22);
+                        0 10px 10px rgba(0,0,0,0.22);
             position: relative;
             overflow: hidden;
             width: 768px;
@@ -264,17 +264,14 @@
         }
 
         /* -----MEDIA QUERY START----- */
-@media screen and (max-width: 700px) {
-    .container{
-        display: none;
-    }
+        @media screen and (max-width: 700px) {
+        .container{
+            display: none;
+        }
 
-    #mobile_view{
+         #mobile_view{
             background: url('assets/black-sesame.jpg');
             display: flex;
-            /* height: 100%;
-            width: 100%; */
-            /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/lightgrey.jpg); */
             background-position: center;
             background-size: 100%; 
             position: absolute;
@@ -285,7 +282,6 @@
         }
 
         .form-box{
-            /* background: url('assets/black-sesame.jpg'); */
             width: 380px;
             min-height: 500px;
             position: relative;
@@ -306,11 +302,8 @@
             display: flex;
             justify-content: center;
             gap: 70px;
-            /* box-shadow: 0 0 20px 9px pink; */
-            /* border-radius: 30px; */
-            /* border-bottom: 1px solid grey; */
-
         }
+
         .toggle-btn{
             padding: 10px 0px;  
             cursor: pointer;
@@ -328,11 +321,8 @@
             top: 0;
             left:0;
             position: absolute;
-            /* width: 110px; */
             width: 50%;
             height: 100%;
-            /* background: linear-gradient(to right, #ff105f, #ffad06); */
-            /* border-radius: 30px; */
             transition: .5s;
             border-bottom: 1px solid rgb(59, 75, 94);
         }
@@ -345,13 +335,11 @@
         }
      
         #login{
-            /* left: 50px; */
             left: 15px;
         }
 
         #register{
             left: 450px; 
-            /* left: 520px; */
         }
 
         form{
@@ -451,25 +439,6 @@
 </div>
 
 <script src="script.js"></script>
-
-<script>
-    var x = document.getElementById("login");
-    var y = document.getElementById("register");
-    var z = document.getElementById("btn");
-
-    function register(){
-        x.style.left = "-400px";
-        y.style.left = "15px";
-        z.style.left = "120px";
-    }
-
-    function login(){
-        x.style.left = "15px";
-        y.style.left = "450px";
-        z.style.left = "0px";
-    }
-
-</script>
 
 </body>
 </html>
