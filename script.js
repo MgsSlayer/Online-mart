@@ -1,4 +1,4 @@
-// ANIMATION FOR SIGN IN/UP PAGE
+// ANIMATION FOR SIGN IN/UP PAGE (DESKTOP)
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
@@ -10,7 +10,7 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
-
+// ANIMATION FOR SIGN IN/UP PAGE (MOBILE)
 var x = document.getElementById("login");
 var y = document.getElementById("register");
 var z = document.getElementById("btn");
@@ -51,6 +51,22 @@ const sub = document.getElementById('sub');
 sub.classList.toggle("open")
 }
 
+const desk_menu = document.querySelector(".sub-item");
+const desk_submenu = document.querySelector(".sub-list");
 
+desk_menu.addEventListener("mouseenter", ()=>{
+  desk_submenu.style.display = "flex";
+});
 
+desk_menu.addEventListener("mouseleave", ()=>{
+  setTimeout(()=>{ 
+    if (!desk_submenu.matches(":hover")){
+    desk_submenu.style.display = "none";
+  }}, 5000);
+ 
+});
+
+desk_submenu.addEventListener("mouseenter", () => {
+  desk_submenu.style.display = "flex"; // Ensures submenu stays open when hovered
+}); 
 
