@@ -220,11 +220,14 @@ img{
 /* -----MOBILE NAV START----- */
 #hamburger-nav {
     display: none;
+    position: relative;
+    /* z-index: 10000; */
   }
   
   .hamburger-menu {
     position: relative;
     display: inline-block;
+    /* z-index: 10000; */
   }
   
   .hamburger-icon {
@@ -235,6 +238,8 @@ img{
     width: 30px;
     cursor: pointer;
     margin: 0.7rem 0;
+    /* position: relative;
+    z-index: 10000; */
   }
   
   .hamburger-icon span {
@@ -246,7 +251,7 @@ img{
 
   .menu-links {
     position: fixed;
-    /* top: ; */
+    /* top: 4rem; */
     left: -0.5rem;
     background-color: white;
     min-width: 17rem;
@@ -256,7 +261,7 @@ img{
     /* transition: all 0.5 ease-in-out; */
     transition: all 0.3s ease;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
   }
   
   .menu-links ul li a {
@@ -875,8 +880,6 @@ img{
         display: flex;
       }
 
-   
-
     .top_banner{
         position: fixed;
         width: 100%;
@@ -888,7 +891,7 @@ img{
         position: fixed;
         top: 4rem;
         width: 100%;
-        z-index: 5;
+        z-index: 1;
     }
 
     #body_background, #body_div, .main_body_productPage, .all, footer{
