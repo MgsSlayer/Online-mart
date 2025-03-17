@@ -297,7 +297,7 @@
 
         .button-box{
             width: 235px;
-            margin: 35px 0;
+            margin: 1.2rem 0;
             position: relative;
             display: flex;
             justify-content: center;
@@ -330,16 +330,20 @@
         .input-form{
             top: 150px;
             position: absolute;
-            width: 350px;
+            min-width: 410px;
             transition: .5s;
+        }
+
+        input{
+            min-height: 2.8rem;
         }
      
         #login{
-            left: 15px;
+            left: -15px;
         }
 
         #register{
-            left: 450px; 
+            left: 420px; 
         }
 
         form{
@@ -403,6 +407,7 @@
 
     <div class="wrapper">
         <div class="form-box">
+            <h2 style="padding-top: 1rem;">Mag Beads</h2>
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-btn" onclick="login()">SIGN IN</button>

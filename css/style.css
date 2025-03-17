@@ -161,7 +161,8 @@ img{
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    min-width: 11rem;
+    min-width: 12.5rem;
+    border-right: 1px solid #dfdcdc88;
 }
 
 .sub-list ol li{
@@ -204,6 +205,9 @@ img{
     flex-direction: column; 
     gap: 2rem;
     cursor: pointer;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    
 }
 
 #promos{
@@ -698,13 +702,13 @@ img{
     background-color: #FFFFFF; 
     padding: 1rem;
     flex: 1.2;
-    aspect-ratio: 5 / 5.6;
+    aspect-ratio: 5 / 6;
 }
 
 .image_conatiner{
     height: 100%;
     width: 100%;
-    aspect-ratio: 5 / 5.6;
+    /* aspect-ratio: 5 / 5.6; */
 }
 
 .image_conatiner img{
@@ -890,6 +894,10 @@ img{
     #body_background, #body_div, .main_body_productPage, .all, footer{
         position: relative;
         top: 7rem;
+    }
+
+    .left_main{
+        aspect-ratio: 5 / 6.6;
     }
 
     /* {
