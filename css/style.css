@@ -265,18 +265,23 @@ img{
     width: 30px;
     cursor: pointer;
     margin: 0.7rem 0;
+    position: relative; 
+    z-index: 10000; 
+    will-change: translateX;
+    transition: transform 0.4s ease ;
   }
   
   .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: #FFFFFF;
-    transition: all 0.3 ease-in-out;
+    background-color: #ffffff;
+    /* transition: all 0.4s ease-in-out; */
+    transition: transform 0.4s ease, opacity 0.4s ease;
   }
 
   .menu-links {
     position: fixed;
-    top: 6rem;
+    top: 7rem;
     left: -0.5rem;
     background-color: white;
     min-width: 17rem;
@@ -284,9 +289,9 @@ img{
     transform: translateX(-17rem);
     overflow: hidden;
     /* transition: all 0.5 ease-in-out; */
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
   }
   
   .menu-links ul li a {
@@ -353,7 +358,6 @@ img{
   .menu-links.open {
     /* height: 100vh; */
     transform: translateX(0rem);
-    transition: all 0.5 ease-in-out;
   }
 
   .hamburger-icon.open span:first-child {
@@ -367,7 +371,11 @@ img{
   .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
   }
-  
+
+  .hamburger-icon.open{
+    transform: translateX(13.5rem);
+  }
+/*   
   .hamburger-icon span:first-child {
     transform: none;
   }
@@ -378,9 +386,9 @@ img{
   
   .hamburger-icon span:first-child {
     transform: none;
-  }
+  } */
 /* -----MOBILE NAV END----- */
-
+  
 /* WHY????? */
 /* .cart{
     display: flex;
