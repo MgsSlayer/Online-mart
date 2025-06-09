@@ -66,12 +66,12 @@ var z = document.getElementById("btn");
 
 function register() {
   x.style.left = "-400px";
-  y.style.left = "15px";
+  y.style.left = "-15px";
   z.style.left = "120px";
 }
 
 function login() {
-  x.style.left = "15px";
+  x.style.left = "-15px";
   y.style.left = "450px";
   z.style.left = "0px";
 }
