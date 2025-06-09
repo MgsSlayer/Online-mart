@@ -9,8 +9,8 @@ fetch(`https://magbeads-backend.onrender.com/products/${itemID}`)
   .then((item) => {
     const image = document.getElementById("image_container");
     const name = document.getElementById("product_name");
-    const price = document.getElementById("product_price");
-    const details = document.getElementById("product_desc");
+    const price = document.getElementById("product_id");
+    const details = document.getElementById("product_desc_page");
 
     image.style.background = `url('${item.image}')`;
     image.style.backgroundSize = "cover";
