@@ -78,7 +78,7 @@ function login() {
 
 // HAMBURGER MENU FOR MOBILE
 function toggleMenu() {
-  const menu = document.querySelectorAll(".menu-links, .hamburger-icon");
+  const menu = document.querySelectorAll(".menu-links");
 
   menu.forEach((element) => {
     element.classList.toggle("open");
