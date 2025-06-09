@@ -14,6 +14,7 @@ fetch(`https://magbeads-backend.onrender.com/products/${itemID}`)
     const details = document.getElementById("product_desc_page");
 
     image.src = `${item.image}`;
+    imageCon.style.background = `url("${item.image}")`
     imageCon.style.backgroundSize = "cover";
     imageCon.style.backgroundPosition = "center";
     name.innerHTML = `${item.name}`;
