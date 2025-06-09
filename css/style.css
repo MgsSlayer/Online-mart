@@ -161,8 +161,7 @@ img{
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    min-width: 12.5rem;
-    border-right: 1px solid #dfdcdc88;
+    min-width: 11rem;
 }
 
 .sub-list ol li{
@@ -205,9 +204,6 @@ img{
     flex-direction: column; 
     gap: 2rem;
     cursor: pointer;
-    color: #FFFFFF;
-    font-size: 2.5rem;
-    
 }
 
 .bundleItem{
@@ -269,23 +265,18 @@ img{
     width: 30px;
     cursor: pointer;
     margin: 0.7rem 0;
-    position: relative; 
-    z-index: 10000; 
-    will-change: translateX;
-    transition: transform 0.4s ease ;
   }
   
   .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: grey;
-    /* transition: all 0.4s ease-in-out; */
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    background-color: #FFFFFF;
+    transition: all 0.3 ease-in-out;
   }
 
   .menu-links {
     position: fixed;
-    top: 4rem;
+    /* top: ; */
     left: -0.5rem;
     background-color: white;
     min-width: 17rem;
@@ -293,9 +284,9 @@ img{
     transform: translateX(-17rem);
     overflow: hidden;
     /* transition: all 0.5 ease-in-out; */
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
   }
   
   .menu-links ul li a {
@@ -362,6 +353,7 @@ img{
   .menu-links.open {
     /* height: 100vh; */
     transform: translateX(0rem);
+    transition: all 0.5 ease-in-out;
   }
 
   .hamburger-icon.open span:first-child {
@@ -375,11 +367,7 @@ img{
   .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
   }
-
-  .hamburger-icon.open{
-    transform: translateX(13.5rem);
-  }
-/*   
+  
   .hamburger-icon span:first-child {
     transform: none;
   }
@@ -390,7 +378,7 @@ img{
   
   .hamburger-icon span:first-child {
     transform: none;
-  } */
+  }
 /* -----MOBILE NAV END----- */
 
 /* WHY????? */
@@ -455,7 +443,7 @@ img{
 .items section{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     margin-bottom: 1rem;
 }
 
@@ -473,39 +461,14 @@ img{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background-color 0.15s ease-in-out;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .shadow:hover{
-    background-color: rgba(130, 130, 130, 0.38);  
+    background-color: rgba(130, 130, 130, 0.38); 
 }
 
-.shadow button{
-    /* font-size: 1rem; */
-    padding: 0.5rem;
-    height: 3rem;
-    width: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: none;
-    visibility: hidden;
-    transition: visibility 0.15s ease-in-out;
-}
-
-.shadow:hover button{
-    visibility: visible; 
-}
-
-
-
-/* .shadow button:hover{
-    display: flex;
-} */
 
 .itm_img i{
     margin: 1rem;
@@ -522,15 +485,13 @@ img{
 
 .itemExtra{
     display: flex;
-    justify-content: space-between;
-    /* gap: 2rem; */
+    /* justify-content: space-between; */
     align-items: center;
-     margin: 0.9rem;
 }
 
 .itemExtra button{
     height: 2rem;
-    width: 3rem;
+    width: 10rem;
     padding: 0.5rem;
     background-color: rgb(130, 130, 130);
     border-radius: 5px;
@@ -542,22 +503,12 @@ img{
     background-color: rgb(59, 75, 94);
 }
 
-.add_Cart{
-    font-size: 2rem;
-    height: 2rem;
-}
-
 .desc{
-  padding: 0.9rem;
+    width: 100%;
+    margin: 0.8rem 0 0.9rem 1rem;
 }
 
 .desc h3{
-    margin-bottom: 5px;
-    font-weight: 400;
-    font-size: 0.8rem;
-}
-
-.desc2 h3{
     margin-bottom: 5px;
     font-weight: 400;
     font-size: 0.8rem;
@@ -815,13 +766,13 @@ img{
     background-color: #FFFFFF; 
     padding: 1rem;
     flex: 1.2;
-    aspect-ratio: 5 / 6;
+    aspect-ratio: 5 / 5.6;
 }
 
 .image_conatiner{
     height: 100%;
     width: 100%;
-    /* aspect-ratio: 5 / 5.6; */
+    aspect-ratio: 5 / 5.6;
 }
 
 .image_conatiner img{
@@ -988,6 +939,8 @@ img{
         display: flex;
       }
 
+   
+
     .top_banner{
         position: fixed;
         width: 100%;
@@ -999,16 +952,12 @@ img{
         position: fixed;
         top: 4rem;
         width: 100%;
-        z-index: 1;
+        z-index: 5;
     }
 
     #body_background, #body_div, .main_body_productPage, .all, footer{
         position: relative;
         top: 7rem;
-    }
-
-    .left_main{
-        aspect-ratio: 5 / 6.6;
     }
 
     /* {
