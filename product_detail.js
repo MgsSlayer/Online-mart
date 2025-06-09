@@ -25,3 +25,18 @@ fetch(`https://magbeads-backend.onrender.com/products/${itemID}`)
   .catch((err) => {
     console.log(`${err.name}`);
   });
+
+function toggleMenu() {
+	const menu = document.querySelectorAll('.menu-links');
+	
+	menu.forEach(element =>{
+	  element.classList.toggle("open");
+	})
+  }
+
+function toggle_Sub_menu() {
+  const sub = document.getElementById("sub");
+
+  sub.classList.toggle("open");
+}
+
