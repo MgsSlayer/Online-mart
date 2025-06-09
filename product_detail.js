@@ -21,6 +21,7 @@ image.style.backgroundPosition = 'center';
 name.innerHTML = `${item.name}`;
 price.innerHTML = `${item.price}`;
 details.innerHTML = `${item.description}`
+console.log(item);
 
 })
 .catch((err) => {
