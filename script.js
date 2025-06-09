@@ -1,6 +1,6 @@
 //API INTERACTION
 //FETCH AND DISPLAY PRODUCTS
-fetch("http://localhost:3001/products")
+fetch("https://magbeads-backend.onrender.com//products")
   .then((res) => res.json())
   .then((data) => {
     const items = document.getElementsByClassName("items");
