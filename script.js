@@ -85,13 +85,13 @@ function toggleMenu() {
 	})
   }
 
-  document.addEventListener("click", function (event) {
-    const menu = document.querySelector(".menu-links");
+ // document.addEventListener("click", function (event) {
+  //  const menu = document.querySelector(".menu-links");
 
-    if (!menu.contains(event.target)) {
-        menu.classList.remove("open");
-    }
-});
+   // if (!menu.contains(event.target)) {
+    //    menu.classList.remove("open");
+  //  }
+//});
 
 function toggle_Sub_menu() {
   const sub = document.getElementById("sub");
