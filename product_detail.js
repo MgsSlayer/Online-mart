@@ -5,7 +5,7 @@ console.log(window.location.search);
  console.log(params);
  const itemID = params.get('id');
  console.log(itemID);
-fetch(`https://magbeads-backend.onrender.com/product/${itemID}`)
+fetch(`https://magbeads-backend.onrender.com/products/${itemID}`)
 .then((res) => res.json())
 .then((item) => {
 
