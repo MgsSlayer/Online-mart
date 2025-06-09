@@ -777,13 +777,13 @@ img{
     aspect-ratio: 5 / 5.6;
 }
 
-.image_container{
+.image_conatiner{
     height: 100%;
     width: 100%;
     aspect-ratio: 5 / 5.6;
 }
 
-.image_container img{
+.image_conatiner img{
     height: 100%;
     width: 100%;
 }
