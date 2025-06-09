@@ -2,9 +2,9 @@ console.log(window.location.href);
 console.log(window.location.search);
 //FETCH PRODUCT AND DISPLAY DETAILS
  const params = new URLSearchParams(window.location.search);
- console.log(params);
  const itemID = params.get('id');
- console.log(itemID);
+
+
 fetch(`https://magbeads-backend.onrender.com/products/${itemID}`)
 .then((res) => res.json())
 .then((item) => {
