@@ -78,19 +78,19 @@ function login() {
 
 // HAMBURGER MENU FOR MOBILE
 function toggleMenu() {
-  const menu = document.querySelectorAll(".menu-links");
-
-  menu.forEach((element) => {
-    element.classList.toggle("open");
-  });
-}
-
-document.addEventListener("click", function (event) {
-  const menu = document.querySelector(".menu-links");
-
-  if (!menu.contains(event.target)) {
-    menu.classList.remove("open");
+	const menu = document.querySelectorAll('.menu-links');
+	
+	menu.forEach(element =>{
+	  element.classList.toggle("open");
+	})
   }
+
+  document.addEventListener("click", function (event) {
+    const menu = document.querySelector(".menu-links");
+
+    if (!menu.contains(event.target)) {
+        menu.classList.remove("open");
+    }
 });
 
 function toggle_Sub_menu() {
