@@ -18,7 +18,7 @@ fetch(`https://magbeads-backend.onrender.com/products/${itemID}`)
     imageCon.style.backgroundSize = "cover";
     imageCon.style.backgroundPosition = "center";
     name.innerHTML = `${item.name}`;
-    price.innerHTML = `${item.price}`;
+    price.innerHTML = `₦${item.price}`;
     details.innerHTML = `${item.description}`;
     console.log(item);
   })
