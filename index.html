@@ -23,11 +23,11 @@
                     <i class= "fa fa-search norm_size srch"></i>
                 </div>
                 <div id="icons">
-                    <div id="cart">
+                    <div>
                         <a href="#"><i class="fa fa-heart norm_size" style="color: red;" ></i></a>
                     </div>
-                    <div id="cart">
-                        <a href="#"><i class="fa fa-shopping-bag norm_size" ></i></a>
+                    <div id="cart1">
+                        <a href="#"><i class="fa fa-shopping-bag norm_size"><span class="cart_count">0</span></i></a>
                     </div>
                     <div>
                         <a href="regpage.html"><i class="fa fa-user norm_size"></i></a>
@@ -49,7 +49,7 @@
                                     <li><a href="shop.html"><img src="assets/anklets.jpg">Anklets</a></li>
                                     <li><a href="shop.html"><img src="assets/phone_straps.jpg">Phone Straps</a></li>
                                 </ol>
-                                 <div id="bundles">
+                                <div id="bundles">
                                     <div class="bundleItem">
                                         <div class="bundle" style="background: url('assets/bundle1.jpg'); background-position: center; background-size: cover;"></div>
                                         <p class="bundleTitle">Bundles</p>
@@ -110,31 +110,24 @@
 
         <div class="item_div">
             <div class="item-section">
-                <div class="items">
+                <div class="items" id="items">
                     <!-- <section class="item">
                         <div class="itm_img" style="background: url('assets/item1.jpg');background-size: cover;background-position: center;"><i class="fa fa-heart"></i></div> 
                                 <div class="itemExtra">
-                                    <div class="desc2">
+                                    <div class="desc">
                                         <h3>item1</h3>
                                         <h4>₦3000</h4>
                                     </div>
-                                    <button>+<i class="fa fa-shopping-cart add_Cart"></i></button>
+                                    <button>Add to Cart</button>
                                 </div>
                     </section>
-
                     <section class="item">
-                            <div class="itm_img" style="background: url('assets/item2.jpg');background-size: cover;background-position: center;">
-                                <div class="shadow">
-                                    <button><i class="fa fa-shopping-cart"></i></button>
-                                    <button><i class="fa fa-heart"></i></button>
-                                </div>
-                            </div>       
+                            <div class="itm_img" style="background: url('assets/item2.jpg');background-size: cover;background-position: center;"><div class="shadow"><button class="addCart">+ Add to Cart<button><i class="fa fa-heart"></i></div></div>       
                         <div class="desc">
                                 <h3>item1</h3>
                                 <h4>₦3000</h4>
                             </div>
                     </section>
-
                     <section class="item">
                         <div class="itm_img" style="background: url('assets/item3.jpg');background-size: cover;background-position: center;"><i class="fa fa-heart"></i></div>
                             <div class="desc">
@@ -142,7 +135,6 @@
                                 <h4>₦3000</h4>
                             </div>
                     </section>
-
                     <section class="item">
                         <div class="itm_img" style="background: url('assets/item4.jpg');background-size: cover;background-position: center;"><i class="fa fa-heart"></i></div>
                             <div class="desc">
@@ -270,5 +262,6 @@
 </div>
 
     <script src="script.js"></script>
+    <script src="addtocart.js"></script>
 </body>
 </html>

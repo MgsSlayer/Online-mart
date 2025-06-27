@@ -5,33 +5,47 @@ fetch("https://magbeads-backend.onrender.com/products")
   .then((data) => {
     const items = document.getElementsByClassName("items");
 
-    data.forEach((item) => {
+  data.forEach((item) => {
       const section = document.createElement("section");
       const placeholderImage =
         "https://res.cloudinary.com/dbcdml0yi/image/upload/v1748306396/placeholder_vzi3ev.jpg";
       section.className = "item";
-      section.onclick = () => {
-        if (item._id) {
-          window.location.href = `product_detail.html?id=${item._id}`;
-        } else {
-          alert("Product ID not found!");
-        }
-      };
+      // section.onclick = () => {
+      //   if (item._id) {
+      //     window.location.href = `product_detail?id=${item._id}`;
+      //   } else {
+      //     alert("Product ID not found!");
+      //   }
+      // };
 
       section.innerHTML = `
      <div class="itm_img" style="background: url('${
        item.image || placeholderImage
      }');background-size: cover;background-position: center;"><i class="fa fa-heart"></i></div> 
-                                    <div class="desc">
+                                <div class="itemExtra">
+                                    <div class="desc2">
                                         <h3>${item.name}</h3>
                                         <h4>₦${item.price}</h4>
                                     </div>
+                                    <button class="add_to_cart" data-id="${item._id}" data-name="${item.name}">+<i class="fa fa-shopping-cart add_Cart"></i></button>
+                                </div>
     `;
-      // items.appendChild(section);
-      Array.from(items).forEach((item) => {
+
+      Array.from(items).forEach((container) => {
         const clone = section.cloneNode(true);
-        clone.addEventListener("click", section.onclick);
-        item.appendChild(clone);
+        const click_image = clone.querySelector('.itm_img');
+        if(click_image){
+    click_image.onclick = () => {
+        if (item._id) {
+          window.location.href = `product_detail?id=${item._id}`;
+        } else {
+          alert("Product ID not found!");
+        }
+      };
+  }
+
+       
+        container.appendChild(clone);
       });
     });
   })
