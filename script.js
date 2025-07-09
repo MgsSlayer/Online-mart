@@ -37,7 +37,7 @@ fetch("https://magbeads-backend.onrender.com/products")
         if(click_image){
     click_image.onclick = () => {
         if (item._id) {
-          window.location.href = `product_detail?id=${item._id}`;
+          window.location.href = `product_detail.html?id=${item._id}`;
         } else {
           alert("Product ID not found!");
         }
