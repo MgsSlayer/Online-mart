@@ -1,7 +1,8 @@
 
 
 function display_cart() {
-// const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    console.log("test1");
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
    const cart_div =  document.querySelector(".cart_page_left_main");
    const each_item = document.createElement("div");
    each_item.className = "each_item";
@@ -10,7 +11,7 @@ function display_cart() {
     cart_div.innerHTML = "Your cart is currently empty";
     return;
    }
-   
+   console.log(cart);
    cart_div.innerHTML = cart.map((item) => {
     const itemtotal = item.price * item.quantity;
    return `
@@ -48,6 +49,9 @@ function display_cart() {
 }).join('')
 }
 
+display_cart()
+
+console.log("test");
 
 // function calculate_item_total(){
 //     const cart = JSON.parse(localStorage.getItem("cart")) || [];
